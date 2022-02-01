@@ -1,0 +1,27 @@
+body {
+    background-color: grey;
+}
+
+.container {
+    width: 1300px;
+    margin: auto;
+
+}   
+button {
+    width: 100px;
+    margin: 0;
+    cursor: pointer;
+} 
+img {
+    margin: 0;
+
+} 
+
+.rightarrow img {
+    
+    transform: rotateY(180deg);
+}
+.photoviewer {
+    display: flex;
+}
+    
