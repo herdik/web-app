@@ -24,6 +24,7 @@ let data0 = {
 
 let currentPhoto = 0;
 let imagesData = [ data0, data1, data2, data3];
+let currentThumbnail;
 
   
 
@@ -68,6 +69,14 @@ imagesData.forEach(arrayObject => {
  
 
   $('#thumbnails img').click((event) => {
-	currentPhoto = $(event.target).attr('dataIndex');
+  /*var previousThumbnail = $('div[dataIndex="${i}"]').get();*/
+  currentThumbnail.css('transform', 'scale(1.0)');
+  currentPhoto = $(event.target).attr('dataIndex');
 	loadPhoto(currentPhoto);
+  $(event.target).css('transform', 'scale(1.1)');
+  currentThumbnail = $(event.target);
 });
+
+
+ 
+
